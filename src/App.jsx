@@ -28,7 +28,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <Router basename="/AccountManager">
       <div className="w-full p-4 grid flex-1 grid-cols-2 grid-rows-2 gap-4">
         <Routes>
           {/* Home Page - Shows Form, Summary, and Transactions */}
@@ -48,15 +48,6 @@ const App = () => {
               </>
             }
           />
-          {/* Separate pages for Summary and Transactions */}
-          {/* <Route
-            path="/summary"
-            element={<Summary transactions={transactions} />}
-          /> */}
-          {/* <Route
-            path="/transactions"
-            element={<TransactionList transactions={transactions} />}
-          /> */}
           <Route
             path="/dailyspends"
             element={<DailySpends transactions={transactions} />}
